@@ -106,9 +106,9 @@ async def bot_start(event):
             start_msg = f"**Hello {mention}**\
                         \n**I am @Gtnero's assistant bot**\
                         \n**If you need any help you can ask for it here**\
-                        \n**@Gtnero will reply to you via this bot when it comes online**"
+                        \n**@Gtnero will reply to you via this bot when it comes online**\
                         \n\n**مرحبا أخي أنا @GTNero مساعد قارب**\
-                        \n** إذا كنت بحاجة إلى أي مساعدة يمكنك طلبها هنا**\
+                        \n**إذا كنت بحاجة إلى أي مساعدة يمكنك طلبها هنا**\
                         \n**سوف يرد عليك @Gtnero عبر هذا الروبوت عندما يكون متصلاً بالإنترنت**"
         buttons = [
             (
