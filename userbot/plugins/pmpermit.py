@@ -203,7 +203,7 @@ async def do_pm_options_action(event, chat):
         LOGS.info(str(e))
     sql.del_collection("pmmessagecache")
     sql.add_collection("pmmessagecache", PMMESSAGE_CACHE, {})
-    USER_BOT_WARN_ZERO = "**ɪғ ɪ ʀᴇᴍᴇᴍʙᴇʀ ᴄᴏʀʀᴇᴄᴛʟʏ ɪ ᴍᴇɴᴛɪᴏɴᴇᴅ ɪɴ ᴍʏ ᴘʀᴇᴠɪᴏᴜs ᴍᴇssᴀɢᴇ ᴛʜᴀᴛ ᴛʜɪs ɪs ɴᴏᴛ ᴛʜᴇ ʀɪɢʜᴛ ᴘʟᴀᴄᴇ ғᴏʀ ʏᴏᴜ ᴛᴏ sᴘᴀᴍ. \n Tʜᴏᴜɢʜ ʏᴏᴜ ɪɢɴᴏʀᴇᴅ ᴍᴇ ᴀɴᴅ ᴍᴇssᴀɢᴇᴅ ᴍᴇ. Sᴏ, ɪ sɪᴍᴘʟʏ ʙʟᴏᴄᴋᴇᴅ ʏᴏᴜ. \n Nᴏᴡ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴅᴏ ᴀɴʏᴛʜɪɴɢ ᴜɴʟᴇss ᴍʏ ʙᴏss ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ ᴀɴᴅ ᴜɴʙʟᴏᴄᴋs ʏᴏᴜ.**"
+    USER_BOT_WARN_ZERO = "**ɪғ ɪ ʀᴇᴍᴇᴍʙᴇʀ ᴄᴏʀʀᴇᴄᴛʟʏ ɪ ᴍᴇɴᴛɪᴏɴᴇᴅ ɪɴ ᴍʏ ᴘʀᴇᴠɪᴏᴜs ᴍᴇssᴀɢᴇ ᴛʜᴀᴛ ᴛʜɪs ɪs ɴᴏᴛ ᴛʜᴇ ʀɪɢʜᴛ ᴘʟᴀᴄᴇ ғᴏʀ ʏᴏᴜ ᴛᴏ sᴘᴀᴍ. \n\n Tʜᴏᴜɢʜ ʏᴏᴜ ɪɢɴᴏʀᴇᴅ ᴍᴇ ᴀɴᴅ ᴍᴇssᴀɢᴇᴅ ᴍᴇ. Sᴏ, ɪ sɪᴍᴘʟʏ ʙʟᴏᴄᴋᴇᴅ ʏᴏᴜ. \n\n Nᴏᴡ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴅᴏ ᴀɴʏᴛʜɪɴɢ ᴜɴʟᴇss ᴍʏ ʙᴏss ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ ᴀɴᴅ ᴜɴʙʟᴏᴄᴋs ʏᴏᴜ.**"
 
     await event.reply(USER_BOT_WARN_ZERO)
     await event.client(functions.contacts.BlockRequest(chat.id))
@@ -255,7 +255,7 @@ __Mʏ ʙᴏss ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ ᴡʜᴇɴ ʜᴇ/sʜᴇ ᴄᴏᴍᴇs 
         LOGS.info(str(e))
     sql.del_collection("pmmessagecache")
     sql.add_collection("pmmessagecache", PMMESSAGE_CACHE, {})
-    USER_BOT_WARN_ZERO = "**ɪғ ɪ ʀᴇᴍᴇᴍʙᴇʀ ᴄᴏʀʀᴇᴄᴛʟʏ ɪ ᴍᴇɴᴛɪᴏɴᴇᴅ ɪɴ ᴍʏ ᴘʀᴇᴠɪᴏᴜs ᴍᴇssᴀɢᴇ ᴛʜᴀᴛ ᴛʜɪs ɪs ɴᴏᴛ ᴛʜᴇ ʀɪɢʜᴛ ᴘʟᴀᴄᴇ ғᴏʀ ʏᴏᴜ ᴛᴏ sᴘᴀᴍ. \n Tʜᴏᴜɢʜ ʏᴏᴜ ɪɢɴᴏʀᴇᴅ ᴍᴇ ᴀɴᴅ ᴍᴇssᴀɢᴇᴅ ᴍᴇ. Sᴏ, ɪ sɪᴍᴘʟʏ ʙʟᴏᴄᴋᴇᴅ ʏᴏᴜ. \n Nᴏᴡ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴅᴏ ᴀɴʏᴛʜɪɴɢ ᴜɴʟᴇss ᴍʏ ʙᴏss ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ ᴀɴᴅ ᴜɴʙʟᴏᴄᴋs ʏᴏᴜ.**"
+    USER_BOT_WARN_ZERO = "**ɪғ ɪ ʀᴇᴍᴇᴍʙᴇʀ ᴄᴏʀʀᴇᴄᴛʟʏ ɪ ᴍᴇɴᴛɪᴏɴᴇᴅ ɪɴ ᴍʏ ᴘʀᴇᴠɪᴏᴜs ᴍᴇssᴀɢᴇ ᴛʜᴀᴛ ᴛʜɪs ɪs ɴᴏᴛ ᴛʜᴇ ʀɪɢʜᴛ ᴘʟᴀᴄᴇ ғᴏʀ ʏᴏᴜ ᴛᴏ sᴘᴀᴍ. \n\n Tʜᴏᴜɢʜ ʏᴏᴜ ɪɢɴᴏʀᴇᴅ ᴍᴇ ᴀɴᴅ ᴍᴇssᴀɢᴇᴅ ᴍᴇ. Sᴏ, ɪ sɪᴍᴘʟʏ ʙʟᴏᴄᴋᴇᴅ ʏᴏᴜ. \n\n Nᴏᴡ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴅᴏ ᴀɴʏᴛʜɪɴɢ ᴜɴʟᴇss ᴍʏ ʙᴏss ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ ᴀɴᴅ ᴜɴʙʟᴏᴄᴋs ʏᴏᴜ.**"
 
     await event.reply(USER_BOT_WARN_ZERO)
     await event.client(functions.contacts.BlockRequest(chat.id))
@@ -307,7 +307,7 @@ __Mʏ ʙᴏss ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ ᴡʜᴇɴ ʜᴇ/sʜᴇ ᴄᴏᴍᴇs 
         LOGS.info(str(e))
     sql.del_collection("pmmessagecache")
     sql.add_collection("pmmessagecache", PMMESSAGE_CACHE, {})
-    USER_BOT_WARN_ZERO = "**ɪғ ɪ ʀᴇᴍᴇᴍʙᴇʀ ᴄᴏʀʀᴇᴄᴛʟʏ ɪ ᴍᴇɴᴛɪᴏɴᴇᴅ ɪɴ ᴍʏ ᴘʀᴇᴠɪᴏᴜs ᴍᴇssᴀɢᴇ ᴛʜᴀᴛ ᴛʜɪs ɪs ɴᴏᴛ ᴛʜᴇ ʀɪɢʜᴛ ᴘʟᴀᴄᴇ ғᴏʀ ʏᴏᴜ ᴛᴏ sᴘᴀᴍ. \n Tʜᴏᴜɢʜ ʏᴏᴜ ɪɢɴᴏʀᴇᴅ ᴍᴇ ᴀɴᴅ ᴍᴇssᴀɢᴇᴅ ᴍᴇ. Sᴏ, ɪ sɪᴍᴘʟʏ ʙʟᴏᴄᴋᴇᴅ ʏᴏᴜ. \n Nᴏᴡ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴅᴏ ᴀɴʏᴛʜɪɴɢ ᴜɴʟᴇss ᴍʏ ʙᴏss ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ ᴀɴᴅ ᴜɴʙʟᴏᴄᴋs ʏᴏᴜ.**"
+    USER_BOT_WARN_ZERO = "**ɪғ ɪ ʀᴇᴍᴇᴍʙᴇʀ ᴄᴏʀʀᴇᴄᴛʟʏ ɪ ᴍᴇɴᴛɪᴏɴᴇᴅ ɪɴ ᴍʏ ᴘʀᴇᴠɪᴏᴜs ᴍᴇssᴀɢᴇ ᴛʜᴀᴛ ᴛʜɪs ɪs ɴᴏᴛ ᴛʜᴇ ʀɪɢʜᴛ ᴘʟᴀᴄᴇ ғᴏʀ ʏᴏᴜ ᴛᴏ sᴘᴀᴍ. \n\n Tʜᴏᴜɢʜ ʏᴏᴜ ɪɢɴᴏʀᴇᴅ ᴍᴇ ᴀɴᴅ ᴍᴇssᴀɢᴇᴅ ᴍᴇ. Sᴏ, ɪ sɪᴍᴘʟʏ ʙʟᴏᴄᴋᴇᴅ ʏᴏᴜ. \n\n Nᴏᴡ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴅᴏ ᴀɴʏᴛʜɪɴɢ ᴜɴʟᴇss ᴍʏ ʙᴏss ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ ᴀɴᴅ ᴜɴʙʟᴏᴄᴋs ʏᴏᴜ.**"
 
     await event.reply(USER_BOT_WARN_ZERO)
     await event.client(functions.contacts.BlockRequest(chat.id))
@@ -359,7 +359,7 @@ __Mʏ ʙᴏss ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ ᴡʜᴇɴ ʜᴇ/sʜᴇ ᴄᴏᴍᴇs 
         LOGS.info(str(e))
     sql.del_collection("pmmessagecache")
     sql.add_collection("pmmessagecache", PMMESSAGE_CACHE, {})
-    USER_BOT_WARN_ZERO = "**ɪғ ɪ ʀᴇᴍᴇᴍʙᴇʀ ᴄᴏʀʀᴇᴄᴛʟʏ ɪ ᴍᴇɴᴛɪᴏɴᴇᴅ ɪɴ ᴍʏ ᴘʀᴇᴠɪᴏᴜs ᴍᴇssᴀɢᴇ ᴛʜᴀᴛ ᴛʜɪs ɪs ɴᴏᴛ ᴛʜᴇ ʀɪɢʜᴛ ᴘʟᴀᴄᴇ ғᴏʀ ʏᴏᴜ ᴛᴏ sᴘᴀᴍ. \n Tʜᴏᴜɢʜ ʏᴏᴜ ɪɢɴᴏʀᴇᴅ ᴍᴇ ᴀɴᴅ ᴍᴇssᴀɢᴇᴅ ᴍᴇ. Sᴏ, ɪ sɪᴍᴘʟʏ ʙʟᴏᴄᴋᴇᴅ ʏᴏᴜ. \n Nᴏᴡ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴅᴏ ᴀɴʏᴛʜɪɴɢ ᴜɴʟᴇss ᴍʏ ʙᴏss ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ ᴀɴᴅ ᴜɴʙʟᴏᴄᴋs ʏᴏᴜ.**"
+    USER_BOT_WARN_ZERO = "**ɪғ ɪ ʀᴇᴍᴇᴍʙᴇʀ ᴄᴏʀʀᴇᴄᴛʟʏ ɪ ᴍᴇɴᴛɪᴏɴᴇᴅ ɪɴ ᴍʏ ᴘʀᴇᴠɪᴏᴜs ᴍᴇssᴀɢᴇ ᴛʜᴀᴛ ᴛʜɪs ɪs ɴᴏᴛ ᴛʜᴇ ʀɪɢʜᴛ ᴘʟᴀᴄᴇ ғᴏʀ ʏᴏᴜ ᴛᴏ sᴘᴀᴍ. \n\n Tʜᴏᴜɢʜ ʏᴏᴜ ɪɢɴᴏʀᴇᴅ ᴍᴇ ᴀɴᴅ ᴍᴇssᴀɢᴇᴅ ᴍᴇ. Sᴏ, ɪ sɪᴍᴘʟʏ ʙʟᴏᴄᴋᴇᴅ ʏᴏᴜ. \n\n Nᴏᴡ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴅᴏ ᴀɴʏᴛʜɪɴɢ ᴜɴʟᴇss ᴍʏ ʙᴏss ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ ᴀɴᴅ ᴜɴʙʟᴏᴄᴋs ʏᴏᴜ.**"
 
     await event.reply(USER_BOT_WARN_ZERO)
     await event.client(functions.contacts.BlockRequest(chat.id))
@@ -387,7 +387,7 @@ async def do_pm_spam_action(event, chat):
             del PMMESSAGE_CACHE[str(chat.id)]
     except Exception as e:
         LOGS.info(str(e))
-    USER_BOT_WARN_ZERO = "**ɪғ ɪ ʀᴇᴍᴇᴍʙᴇʀ ᴄᴏʀʀᴇᴄᴛʟʏ ɪ ᴍᴇɴᴛɪᴏɴᴇᴅ ɪɴ ᴍʏ ᴘʀᴇᴠɪᴏᴜs ᴍᴇssᴀɢᴇ ᴛʜᴀᴛ ᴛʜɪs ɪs ɴᴏᴛ ᴛʜᴇ ʀɪɢʜᴛ ᴘʟᴀᴄᴇ ғᴏʀ ʏᴏᴜ ᴛᴏ sᴘᴀᴍ. \n Tʜᴏᴜɢʜ ʏᴏᴜ ɪɢɴᴏʀᴇᴅ ᴍᴇ ᴀɴᴅ ᴍᴇssᴀɢᴇᴅ ᴍᴇ. Sᴏ, ɪ sɪᴍᴘʟʏ ʙʟᴏᴄᴋᴇᴅ ʏᴏᴜ. \n Nᴏᴡ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴅᴏ ᴀɴʏᴛʜɪɴɢ ᴜɴʟᴇss ᴍʏ ʙᴏss ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ ᴀɴᴅ ᴜɴʙʟᴏᴄᴋs ʏᴏᴜ.**"
+    USER_BOT_WARN_ZERO = "**ɪғ ɪ ʀᴇᴍᴇᴍʙᴇʀ ᴄᴏʀʀᴇᴄᴛʟʏ ɪ ᴍᴇɴᴛɪᴏɴᴇᴅ ɪɴ ᴍʏ ᴘʀᴇᴠɪᴏᴜs ᴍᴇssᴀɢᴇ ᴛʜᴀᴛ ᴛʜɪs ɪs ɴᴏᴛ ᴛʜᴇ ʀɪɢʜᴛ ᴘʟᴀᴄᴇ ғᴏʀ ʏᴏᴜ ᴛᴏ sᴘᴀᴍ. \n\n Tʜᴏᴜɢʜ ʏᴏᴜ ɪɢɴᴏʀᴇᴅ ᴍᴇ ᴀɴᴅ ᴍᴇssᴀɢᴇᴅ ᴍᴇ. Sᴏ, ɪ sɪᴍᴘʟʏ ʙʟᴏᴄᴋᴇᴅ ʏᴏᴜ. \n\n Nᴏᴡ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴅᴏ ᴀɴʏᴛʜɪɴɢ ᴜɴʟᴇss ᴍʏ ʙᴏss ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ ᴀɴᴅ ᴜɴʙʟᴏᴄᴋs ʏᴏᴜ.**"
 
     await event.reply(USER_BOT_WARN_ZERO)
     await event.client(functions.contacts.BlockRequest(chat.id))
@@ -596,7 +596,7 @@ async def on_plug_in_callback_query_handler(event):
          \n░░░░░░░░░░░█░░█\
          \n░░░░░░░░░░░░▀▀`\
          \n**Sᴏ ᴜɴᴄᴏᴏʟ, ᴛʜɪs ɪs ɴᴏᴛ ʏᴏᴜʀ ʜᴏᴍᴇ. Gᴏ ʙᴏᴛʜᴇʀ sᴏᴍᴇᴡʜᴇʀᴇ ᴇʟsᴇ.\
-         \n\n**Aɴᴅ ᴛʜɪs ɪs ʏᴏᴜʀ ʟᴀsᴛ ᴡᴀʀɴɪɴɢ ɪғ ʏᴏᴜ sᴇɴᴅ ᴏɴᴇ ᴍᴏʀᴇ ᴍᴇssᴀɢᴇ ʏᴏᴜ ᴡɪʟʟ ʙᴇ ʙʟᴏᴄᴋᴇᴅ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ.**"
+         \n\n**Aɴᴅ ᴛʜɪs ɪs ʏᴏᴜʀ ʟᴀsᴛ ᴡᴀʀɴɪɴɢ ɪғ ʏᴏᴜ sᴇɴᴅ ᴏɴᴇ ᴍᴏʀᴇ ᴍᴇssᴀɢᴇ ʏᴏᴜ ᴡɪʟʟ ʙᴇ ʙʟᴏᴄᴋᴇᴅ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ**"
     sqllist.add_to_list("pmspam", event.query.user_id)
     try:
         PM_WARNS = sql.get_collection("pmspam").json
