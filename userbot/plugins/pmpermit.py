@@ -480,12 +480,11 @@ __Let's make this smooth and let me know why you are here.__
 
 **Choose one of the following reasons why you are here:**"""
     buttons = [
-        (Button.inline(text="To enquire something.", data="to_enquire_something"),),
-        (Button.inline(text="To request something.", data="to_request_something"),),
-        (Button.inline(text="To chat with my master.", data="to_chat_with_my_master"),),
+        (Button.inline(text="🤝 ᴛᴏ ʀᴇǫᴜᴇsᴛ sᴏᴍᴇʀʜɪɴɢ 🤝", data="to_request_something"),),
+        (Button.inline(text="💭 ᴛᴏ ᴄʜᴀᴛ ғᴏʀ ᴀ ᴡʜɪʟᴇ 💭", data="go_to_bot"),),
         (
             Button.inline(
-                text="To spam my master's inbox.",
+                text="‼️ ᴛᴏ sᴘᴀᴍ ᴍʏ ɪɴʙᴏx ‼️",
                 data="to_spam_my_master_inbox",
             ),
         ),
@@ -597,6 +596,10 @@ async def on_plug_in_callback_query_handler(event):
     sqllist.rm_from_list("pmoptions", event.query.user_id)
     await event.edit(text)
 
+@catub.tgbot.on(CallbackQuery(data=re.compile(rb"go_to_bot")))
+async def on_plug_in_callback_query_handler(event):
+    if event.query.user_id == event.client.uid:
+        await event.answer(url="https://t.me/GTRexabot?start=true")
 
 @catub.cat_cmd(
     pattern="pmguard (on|off)$",
