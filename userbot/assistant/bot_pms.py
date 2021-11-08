@@ -103,16 +103,16 @@ async def bot_start(event):
                 my_mention=my_mention,
             )
         else:
-            start_msg = f"Hey! 👤{mention},\
-                        \nI am {my_mention}'s assistant bot.\
-                        \nYou can contact to my master from here.\
-                        \n\nPowered by [Catuserbot](https://t.me/catuserbot)"
+            start_msg = f"**Hello {mention}**\
+                        \n**I am @Gtnero's assistant bot**\
+                        \n**If you need any help you can ask for it here**\
+                        \n**@Gtnero will reply to you via this bot when it comes online**"
+                        \n\n**مرحبا أخي أنا @GTNero مساعد قارب**\
+                        \n** إذا كنت بحاجة إلى أي مساعدة يمكنك طلبها هنا**\
+                        \n**سوف يرد عليك @Gtnero عبر هذا الروبوت عندما يكون متصلاً بالإنترنت**"
         buttons = [
             (
-                Button.url("Repo", "https://github.com/sandy1709/catuserbot"),
-                Button.url(
-                    "Deploy",
-                    "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FMr-confused%2Fcatpack&template=https%3A%2F%2Fgithub.com%2FMr-confused%2Fcatpack",
+                Button.url("🌿 ᴊᴏɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 🌿", "https://t.me/CinimaAdholokam",
                 ),
             )
         ]
