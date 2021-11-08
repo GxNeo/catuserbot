@@ -230,10 +230,10 @@ async def do_pm_enquire_action(event, chat):
     except AttributeError:
         PMMESSAGE_CACHE = {}
     if str(chat.id) not in PM_WARNS:
-        text = """__Hey! Have some patience. My master has not seen your message yet. \
-My master usually responds to people, though idk about some exceptional users.__
-__My master will respond when he/she comes online, if he/she wants to.__
-**Please do not spam unless you wish to be blocked and reported.**"""
+        text = """__Hᴇʏ! Hᴀᴠᴇ sᴏᴍᴇ ᴘᴀᴛɪᴇɴᴄᴇ. Mʏ ᴏᴡɴᴇʀ ʜᴀs ɴᴏᴛ sᴇᴇɴ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ʏᴇᴛ. \
+__Mʏ ᴏᴡɴᴇʀ ᴜsᴜᴀʟʟʏ ʀᴇsᴘᴏɴᴅs ᴛᴏ ᴘᴇᴏᴘʟᴇ, ᴛʜᴏᴜɢʜ ɪᴅᴋ ᴀʙᴏᴜᴛ sᴏᴍᴇ ᴇxᴄᴇᴘᴛɪᴏɴᴀʟ ᴜsᴇʀs.__
+__Mʏ ᴏᴡɴᴇʀ ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ ᴡʜᴇɴ ʜᴇ/sʜᴇ ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ, ɪғ ʜᴇ/sʜᴇ ᴡᴀɴᴛs ᴛᴏ.__
+\n**Pʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ sᴘᴀᴍ ᴜɴʟᴇss ʏᴏᴜ ᴡɪsʜ ᴛᴏ ʙᴇ ʙʟᴏᴄᴋᴇᴅ ᴀɴᴅ ʀᴇᴘᴏʀᴛᴇᴅ.**"""
         await event.reply(text)
         PM_WARNS[str(chat.id)] = 1
         sql.del_collection("pmwarns")
@@ -279,9 +279,9 @@ async def do_pm_request_action(event, chat):
     except AttributeError:
         PMMESSAGE_CACHE = {}
     if str(chat.id) not in PM_WARNS:
-        text = """__Hey have some patience. My master has not seen your message yet. \
-My master usually responds to people, though idk about some exceptional users.__
-__My master will respond when he/she comes back online, if he/she wants to.__
+        text = """____Hᴇʏ ʜᴀᴠᴇ sᴏᴍᴇ ᴘᴀᴛɪᴇɴᴄᴇ. Mʏ ᴍᴀsᴛᴇʀ ʜᴀs ɴᴏᴛ sᴇᴇɴ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ʏᴇᴛ. \
+Mʏ ᴍᴀsᴛᴇʀ ᴜsᴜᴀʟʟʏ ʀᴇsᴘᴏɴᴅs ᴛᴏ ᴘᴇᴏᴘʟᴇ, ᴛʜᴏᴜɢʜ ɪᴅᴋ ᴀʙᴏᴜᴛ sᴏᴍᴇ ᴇxᴄᴇᴘᴛɪᴏɴᴀʟ ᴜsᴇʀs__
+__Mʏ ᴍᴀsᴛᴇʀ ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ ᴡʜᴇɴ ʜᴇ/sʜᴇ ᴄᴏᴍᴇs ʙᴀᴄᴋ ᴏɴʟɪɴᴇ, ɪғ ʜᴇ/sʜᴇ ᴡᴀɴᴛs ᴛᴏ.__
 **Please do not spam unless you wish to be blocked and reported.**"""
         await event.reply(text)
         PM_WARNS[str(chat.id)] = 1
@@ -328,7 +328,7 @@ async def do_pm_chat_action(event, chat):
     except AttributeError:
         PMMESSAGE_CACHE = {}
     if str(chat.id) not in PM_WARNS:
-        text = """__Heyy! I am busy right now I already asked you to wait know. After my work finishes. \
+        text = """__Hᴇʏ ʜᴀᴠᴇ sᴏᴍᴇ ᴘᴀᴛɪᴇɴᴄᴇ. Mʏ ᴍᴀsᴛᴇʀ ʜᴀs ɴᴏᴛ sᴇᴇɴ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ʏᴇᴛ. \
 We can talk but not right know. Hope you understand.__
 __My master will respond when he/she comes back online, if he/she wants to.__
 **Please do not spam unless you wish to be blocked and reported.**"""
