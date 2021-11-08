@@ -30,7 +30,7 @@ from .logger import logging
 LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
-CATLOGO = "https://telegra.ph/file/493268c1f5ebedc967eba.jpg"
+CATLOGO = "https://telegra.ph/file/aab6da324d02c0ab7973f.jpg"
 tr = Config.COMMAND_HAND_LER
 
 
@@ -557,10 +557,7 @@ async def inline_handler(event):  # sourcery no-metrics
     else:
         buttons = [
             (
-                Button.url("Source code", "https://github.com/sandy1709/catuserbot"),
-                Button.url(
-                    "Deploy",
-                    "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FMr-confused%2Fcatpack&template=https%3A%2F%2Fgithub.com%2FMr-confused%2Fcatpack",
+                Button.url("👑 ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ʙᴏss 👑", "https://github.com/sandy1709/catuserbot",
                 ),
             )
         ]
@@ -574,9 +571,9 @@ async def inline_handler(event):  # sourcery no-metrics
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="𝘾𝙖𝙩𝙐𝙨𝙚𝙧𝙗𝙤𝙩",
-            description="Deploy yourself",
-            url="https://github.com/sandy1709/catuserbot",
+            title="ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ",
+            description="⚡ My haters are my motivators ⚡",
+            url="https://www.telegram.dog/gtnero",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
