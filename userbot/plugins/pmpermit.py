@@ -480,7 +480,7 @@ __Let's make this smooth and let me know why you are here.__
 
 **Choose one of the following reasons why you are here:**"""
     buttons = [
-        (Button.inline(text="🤝 ᴛᴏ ʀᴇǫᴜᴇsᴛ sᴏᴍᴇʀʜɪɴɢ 🤝", data="to_request_something"),),
+        (Button.inline(text="🤝 ᴛᴏ ʀᴇǫᴜᴇsᴛ sᴏᴍᴇᴛʜɪɴɢ 🤝", data="to_request_something"),),
         (Button.inline(text="💭 ᴛᴏ ᴄʜᴀᴛ ғᴏʀ ᴀ ᴡʜɪʟᴇ 💭", data="go_to_bot"),),
         (
             Button.inline(
@@ -599,7 +599,7 @@ async def on_plug_in_callback_query_handler(event):
 @catub.tgbot.on(CallbackQuery(data=re.compile(rb"go_to_bot")))
 async def on_plug_in_callback_query_handler(event):
     if event.query.user_id == event.client.uid:
-        await event.answer(url="https://t.me/GTRexabot?start=true")
+        await query.answer(url="https://t.me/GTRexabot?start=true")
 
 @catub.cat_cmd(
     pattern="pmguard (on|off)$",
