@@ -104,12 +104,12 @@ async def bot_start(event):
             )
         else:
             start_msg = f"**Hello {mention}**\
-                        \n\n**I am @Gtnero's assistant bot**\
+                        \n\n**I ᴀᴍ [ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ](https://t.me/GTNero) ᴀssɪsᴛᴀɴᴛ ʙᴏᴛ**\
                         \n\n**If you need any help you can ask for it here**\
-                        \n\n**@Gtnero will reply to you via this bot when it comes online**\
-                        \n\n**Я помощник бота @Gtnero**\
+                        \n\n**[ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ](https://t.me/GTNero) will reply to you via this bot when it comes online**\
+                        \n\n\n**Я помощник бота [ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ](https://t.me/GTNero)**\
                         \n\n**Если вам нужна помощь, вы можете попросить об этом здесь**\
-                        \n\n**@Gtnero ответит вам через этого бота, когда он появится в сети.**"
+                        \n\n**[ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ](https://t.me/GTNero) ответит вам через этого бота, когда он появится в сети.**"
         buttons = [
             (
                 Button.url("🎫 ᴊᴏɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 🎫", "https://t.me/CinimaAdholokam",
