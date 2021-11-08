@@ -230,10 +230,13 @@ async def do_pm_enquire_action(event, chat):
     except AttributeError:
         PMMESSAGE_CACHE = {}
     if str(chat.id) not in PM_WARNS:
-        text = """__Hᴇʏ! Hᴀᴠᴇ sᴏᴍᴇ ᴘᴀᴛɪᴇɴᴄᴇ. Mʏ ᴏᴡɴᴇʀ ʜᴀs ɴᴏᴛ sᴇᴇɴ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ʏᴇᴛ. \
-__Mʏ ᴏᴡɴᴇʀ ᴜsᴜᴀʟʟʏ ʀᴇsᴘᴏɴᴅs ᴛᴏ ᴘᴇᴏᴘʟᴇ, ᴛʜᴏᴜɢʜ ɪᴅᴋ ᴀʙᴏᴜᴛ sᴏᴍᴇ ᴇxᴄᴇᴘᴛɪᴏɴᴀʟ ᴜsᴇʀs.__
-__Mʏ ᴏᴡɴᴇʀ ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ ᴡʜᴇɴ ʜᴇ/sʜᴇ ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ, ɪғ ʜᴇ/sʜᴇ ᴡᴀɴᴛs ᴛᴏ.__
-\n**Pʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ sᴘᴀᴍ ᴜɴʟᴇss ʏᴏᴜ ᴡɪsʜ ᴛᴏ ʙᴇ ʙʟᴏᴄᴋᴇᴅ ᴀɴᴅ ʀᴇᴘᴏʀᴛᴇᴅ.**"""
+        text = """__Hᴇʏ! Hᴀᴠᴇ sᴏᴍᴇ ᴘᴀᴛɪᴇɴᴄᴇ. Mʏ ʙᴏss ʜᴀs ɴᴏᴛ sᴇᴇɴ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ʏᴇᴛ. 
+
+__Mʏ ʙᴏss ᴜsᴜᴀʟʟʏ ʀᴇsᴘᴏɴᴅs ᴛᴏ ᴘᴇᴏᴘʟᴇ, ᴛʜᴏᴜɢʜ ɪᴅᴋ ᴀʙᴏᴜᴛ sᴏᴍᴇ ᴇxᴄᴇᴘᴛɪᴏɴᴀʟ ᴜsᴇʀs.__
+
+__Mʏ ʙᴏss ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ ᴡʜᴇɴ ʜᴇ/sʜᴇ ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ, ɪғ ʜᴇ/sʜᴇ ᴡᴀɴᴛs ᴛᴏ.__
+
+\n**⛔ Pʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ sᴘᴀᴍ ᴜɴʟᴇss ʏᴏᴜ ᴡɪsʜ ᴛᴏ ʙᴇ ʙʟᴏᴄᴋᴇᴅ ᴀɴᴅ ʀᴇᴘᴏʀᴛᴇᴅ. ⛔**"""
         await event.reply(text)
         PM_WARNS[str(chat.id)] = 1
         sql.del_collection("pmwarns")
@@ -279,10 +282,13 @@ async def do_pm_request_action(event, chat):
     except AttributeError:
         PMMESSAGE_CACHE = {}
     if str(chat.id) not in PM_WARNS:
-        text = """____Hᴇʏ ʜᴀᴠᴇ sᴏᴍᴇ ᴘᴀᴛɪᴇɴᴄᴇ. Mʏ ᴍᴀsᴛᴇʀ ʜᴀs ɴᴏᴛ sᴇᴇɴ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ʏᴇᴛ. \
-Mʏ ᴍᴀsᴛᴇʀ ᴜsᴜᴀʟʟʏ ʀᴇsᴘᴏɴᴅs ᴛᴏ ᴘᴇᴏᴘʟᴇ, ᴛʜᴏᴜɢʜ ɪᴅᴋ ᴀʙᴏᴜᴛ sᴏᴍᴇ ᴇxᴄᴇᴘᴛɪᴏɴᴀʟ ᴜsᴇʀs__
-__Mʏ ᴍᴀsᴛᴇʀ ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ ᴡʜᴇɴ ʜᴇ/sʜᴇ ᴄᴏᴍᴇs ʙᴀᴄᴋ ᴏɴʟɪɴᴇ, ɪғ ʜᴇ/sʜᴇ ᴡᴀɴᴛs ᴛᴏ.__
-**Please do not spam unless you wish to be blocked and reported.**"""
+        text = """____Hᴇʏ ʜᴀᴠᴇ sᴏᴍᴇ ᴘᴀᴛɪᴇɴᴄᴇ. Mʏ ʙᴏss ʜᴀs ɴᴏᴛ sᴇᴇɴ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ʏᴇᴛ. 
+
+__Mʏ ʙᴏss ᴜsᴜᴀʟʟʏ ʀᴇsᴘᴏɴᴅs ᴛᴏ ᴘᴇᴏᴘʟᴇ, ᴛʜᴏᴜɢʜ ɪᴅᴋ ᴀʙᴏᴜᴛ sᴏᴍᴇ ᴇxᴄᴇᴘᴛɪᴏɴᴀʟ ᴜsᴇʀs__
+
+__Mʏ ʙᴏss ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ ᴡʜᴇɴ ʜᴇ/sʜᴇ ᴄᴏᴍᴇs ʙᴀᴄᴋ ᴏɴʟɪɴᴇ, ɪғ ʜᴇ/sʜᴇ ᴡᴀɴᴛs ᴛᴏ.__
+
+**⛔ Pʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ sᴘᴀᴍ ᴜɴʟᴇss ʏᴏᴜ ᴡɪsʜ ᴛᴏ ʙᴇ ʙʟᴏᴄᴋᴇᴅ ᴀɴᴅ ʀᴇᴘᴏʀᴛᴇᴅ ⛔**"""
         await event.reply(text)
         PM_WARNS[str(chat.id)] = 1
         sql.del_collection("pmwarns")
@@ -328,10 +334,13 @@ async def do_pm_chat_action(event, chat):
     except AttributeError:
         PMMESSAGE_CACHE = {}
     if str(chat.id) not in PM_WARNS:
-        text = """__Hᴇʏ ʜᴀᴠᴇ sᴏᴍᴇ ᴘᴀᴛɪᴇɴᴄᴇ. Mʏ ᴍᴀsᴛᴇʀ ʜᴀs ɴᴏᴛ sᴇᴇɴ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ʏᴇᴛ. \
-We can talk but not right know. Hope you understand.__
-__My master will respond when he/she comes back online, if he/she wants to.__
-**Please do not spam unless you wish to be blocked and reported.**"""
+        text = """__Hᴇʏʏ! I ᴀᴍ ʙᴜsʏ ʀɪɢʜᴛ ɴᴏᴡ I ᴀʟʀᴇᴀᴅʏ ᴀsᴋᴇᴅ ʏᴏᴜ ᴛᴏ ᴡᴀɪᴛ ᴋɴᴏᴡ. Aғᴛᴇʀ ᴍʏ ᴡᴏʀᴋ ғɪɴɪsʜᴇs__
+
+__Wᴇ ᴄᴀɴ ᴛᴀʟᴋ ʙᴜᴛ ɴᴏᴛ ʀɪɢʜᴛ ᴋɴᴏᴡ. Hᴏᴘᴇ ʏᴏᴜ ᴜɴᴅᴇʀsᴛᴀɴᴅ.__
+
+__Mʏ ʙᴏss ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ ᴡʜᴇɴ ʜᴇ/sʜᴇ ᴄᴏᴍᴇs ʙᴀᴄᴋ ᴏɴʟɪɴᴇ, ɪғ ʜᴇ/sʜᴇ ᴡᴀɴᴛs ᴛᴏ__
+
+**⛔ Pʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ sᴘᴀᴍ ᴜɴʟᴇss ʏᴏᴜ ᴡɪsʜ ᴛᴏ ʙᴇ ʙʟᴏᴄᴋᴇᴅ ᴀɴᴅ ʀᴇᴘᴏʀᴛᴇᴅ ⛔**"""
         await event.reply(text)
         PM_WARNS[str(chat.id)] = 1
         sql.del_collection("pmwarns")
