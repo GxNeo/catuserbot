@@ -557,7 +557,7 @@ async def inline_handler(event):  # sourcery no-metrics
     else:
         buttons = [
             (
-                Button.url("🥂 ᴄᴏɴᴛᴀᴄᴛ  ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ 🥂", "https://t.me/GTNero",
+                Button.url("❤️ ᴄᴏɴᴛᴀᴄᴛ  ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ ❤️", "https://t.me/GTNero",
                 ),
             )
         ]
@@ -573,7 +573,7 @@ async def inline_handler(event):  # sourcery no-metrics
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="🥀 ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ 🥀",
+            title="🌟 ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ 🌟",
             description="Mʏ ʜᴀᴛᴇʀs ᴀʀᴇ ᴍʏ ᴍᴏᴛɪᴠᴀᴛᴏʀs",
             url="https://www.telegram.dog/gtnero",
             thumb=photo,
