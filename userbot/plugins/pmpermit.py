@@ -184,7 +184,7 @@ async def do_pm_options_action(event, chat):
     except AttributeError:
         PMMESSAGE_CACHE = {}
     if str(chat.id) not in PM_WARNS:
-        text = "__Select option from above message and wait. Don't spam my inbox, this is your last warning.__"
+        text = "__Sᴇʟᴇᴄᴛ ᴏᴘᴛɪᴏɴ ғʀᴏᴍ ᴀʙᴏᴠᴇ ᴍᴇssᴀɢᴇ ᴀɴᴅ ᴡᴀɪᴛ. Dᴏɴ'ᴛ sᴘᴀᴍ ᴍʏ ɪɴʙᴏx, ᴛʜɪs ɪs ʏᴏᴜʀ ʟᴀsᴛ ᴡᴀʀɴɪɴɢ.__"
         await event.reply(text)
         PM_WARNS[str(chat.id)] = 1
         sql.del_collection("pmwarns")
@@ -255,7 +255,7 @@ __Mʏ ʙᴏss ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ ᴡʜᴇɴ ʜᴇ/sʜᴇ ᴄᴏᴍᴇs 
         LOGS.info(str(e))
     sql.del_collection("pmmessagecache")
     sql.add_collection("pmmessagecache", PMMESSAGE_CACHE, {})
-    USER_BOT_WARN_ZERO = "**If I remember correctly I mentioned in my previous message that this is not the right place for you to spam. \\\x1fThough you ignored that message. So, I simply blocked you. \\\x1fNow you can't do anything unless my master comes online and unblocks you.**"
+    USER_BOT_WARN_ZERO = "** ɪ ʀᴇᴍᴇᴍʙᴇʀ ᴄᴏʀʀᴇᴄᴛʟʏ ɪ ᴍᴇɴᴛɪᴏɴᴇᴅ ɪɴ ᴍʏ ᴘʀᴇᴠɪᴏᴜs ᴍᴇssᴀɢᴇ ᴛʜᴀᴛ ᴛʜɪs ɪs ɴᴏᴛ ᴛʜᴇ ʀɪɢʜᴛ ᴘʟᴀᴄᴇ ғᴏʀ ʏᴏᴜ ᴛᴏ sᴘᴀᴍ. \n Tʜᴏᴜɢʜ ʏᴏᴜ ɪɢɴᴏʀᴇᴅ ᴍᴇ ᴀɴᴅ ᴍᴇssᴀɢᴇᴅ ᴍᴇ. Sᴏ, ɪ sɪᴍᴘʟʏ ʙʟᴏᴄᴋᴇᴅ ʏᴏᴜ. \n Nᴏᴡ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴅᴏ ᴀɴʏᴛʜɪɴɢ ᴜɴʟᴇss ᴍʏ ʙᴏss ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ ᴀɴᴅ ᴜɴʙʟᴏᴄᴋs ʏᴏᴜ.**"
 
     await event.reply(USER_BOT_WARN_ZERO)
     await event.client(functions.contacts.BlockRequest(chat.id))
@@ -359,7 +359,7 @@ __Mʏ ʙᴏss ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ ᴡʜᴇɴ ʜᴇ/sʜᴇ ᴄᴏᴍᴇs 
         LOGS.info(str(e))
     sql.del_collection("pmmessagecache")
     sql.add_collection("pmmessagecache", PMMESSAGE_CACHE, {})
-    USER_BOT_WARN_ZERO = "**If I remember correctly I mentioned in my previous message this is not the right place for you to spam. \\\x1fThough you ignored that message. So, I simply blocked you. \\\x1fNow you can't do anything unless my master comes online and unblocks you.**"
+    USER_BOT_WARN_ZERO = "** ɪ ʀᴇᴍᴇᴍʙᴇʀ ᴄᴏʀʀᴇᴄᴛʟʏ ɪ ᴍᴇɴᴛɪᴏɴᴇᴅ ɪɴ ᴍʏ ᴘʀᴇᴠɪᴏᴜs ᴍᴇssᴀɢᴇ ᴛʜᴀᴛ ᴛʜɪs ɪs ɴᴏᴛ ᴛʜᴇ ʀɪɢʜᴛ ᴘʟᴀᴄᴇ ғᴏʀ ʏᴏᴜ ᴛᴏ sᴘᴀᴍ. \n Tʜᴏᴜɢʜ ʏᴏᴜ ɪɢɴᴏʀᴇᴅ ᴍᴇ ᴀɴᴅ ᴍᴇssᴀɢᴇᴅ ᴍᴇ. Sᴏ, ɪ sɪᴍᴘʟʏ ʙʟᴏᴄᴋᴇᴅ ʏᴏᴜ. \n Nᴏᴡ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴅᴏ ᴀɴʏᴛʜɪɴɢ ᴜɴʟᴇss ᴍʏ ʙᴏss ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ ᴀɴᴅ ᴜɴʙʟᴏᴄᴋs ʏᴏᴜ.**"
 
     await event.reply(USER_BOT_WARN_ZERO)
     await event.client(functions.contacts.BlockRequest(chat.id))
@@ -541,7 +541,7 @@ async def on_plug_in_callback_query_handler(event):
         return await event.answer(text, cache_time=0, alert=True)
     text = """__Oᴋᴀʏ. I ʜᴀᴠᴇ ɴᴏᴛɪғɪᴇᴅ ᴍʏ ʙᴏss ᴀʙᴏᴜᴛ ᴛʜɪs. Wʜᴇɴ ʜᴇ/sʜᴇ ᴄᴏᴍᴇs ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ
 
-__ᴏʀ ᴡʜᴇɴ ᴍʏ ʙᴏss ɪs ғʀᴇᴇ ʜᴇ/sʜᴇ ᴡɪʟʟ ʟᴏᴏᴋ ɪɴᴛᴏ ᴛʜɪs ᴄʜᴀᴛ ᴀɴᴅ ᴡɪʟʟ ᴘɪɴɢ ʏᴏᴜ sᴏ ᴡᴇ ᴄᴀɴ ʜᴀᴠᴇ ᴀ ғʀɪᴇɴᴅʟʏ ᴄʜᴀᴛ.__\
+__ᴏʀ ᴡʜᴇɴ ᴍʏ ʙᴏss ɪs ғʀᴇᴇ ʜᴇ/sʜᴇ ᴡɪʟʟ ʟᴏᴏᴋ ɪɴᴛᴏ ᴛʜɪs ᴄʜᴀᴛ ᴀɴᴅ ᴡɪʟʟ ᴘɪɴɢ ʏᴏᴜ sᴏ ᴡᴇ ᴄᴀɴ ʜᴀᴠᴇ ᴀ ғʀɪᴇɴᴅʟʏ ᴄʜᴀᴛ.__
 
 \n\n**Bᴜᴛ ʀɪɢʜᴛ ɴᴏᴡ ᴘʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ sᴘᴀᴍ ᴜɴʟᴇss ʏᴏᴜ ᴡɪsʜ ᴛᴏ ɢᴇᴛ ʙʟᴏᴄᴋᴇᴅ.**"""
     sqllist.add_to_list("pmrequest", event.query.user_id)
