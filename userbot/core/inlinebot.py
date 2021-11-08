@@ -30,7 +30,7 @@ from .logger import logging
 LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
-CATLOGO = "https://telegra.ph/file/aab6da324d02c0ab7973f.jpg"
+CATLOGO = "https://telegra.ph/file/e2373dae0df4ea3e66bff.jpg"
 tr = Config.COMMAND_HAND_LER
 
 
@@ -557,7 +557,7 @@ async def inline_handler(event):  # sourcery no-metrics
     else:
         buttons = [
             (
-                Button.url("👑 ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ʙᴏss 👑", "https://github.com/sandy1709/catuserbot",
+                Button.url("🕊️ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ʙᴏss 🕊️", "https://t.me/GTNero",
                 ),
             )
         ]
@@ -566,13 +566,15 @@ async def inline_handler(event):  # sourcery no-metrics
             url=CATLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "𝗗𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝗖𝗮𝘁𝗨𝘀𝗲𝗿𝗯𝗼𝘁.", "md"
+            "**Iғ ʏᴏᴜʀ ɪɴᴛᴇɴᴛɪᴏɴ ɪs ᴘᴏᴡᴇʀғᴜʟ, ʏᴏᴜʀ ᴀᴄᴛɪᴏɴ ᴡɪʟʟ ʙᴇ ᴘᴏᴡᴇʀғᴜʟ.**\
+            "\n**Iғ ʏᴏᴜʀ ᴀᴄᴛɪᴏɴ ɪs ᴘᴏᴡᴇʀғᴜʟ, ʏᴏᴜʀ ʀᴇsᴜʟᴛs ᴡɪʟʟ ʙᴇ ᴘᴏᴡᴇʀғᴜʟ.**\
+            "\n\n• • •「 [ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ](https://t.me/GTNero) 」• • •", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ",
-            description="⚡ My haters are my motivators ⚡",
+            title="🥀 ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ 🥀",
+            description="Mʏ ʜᴀᴛᴇʀs ᴀʀᴇ ᴍʏ ᴍᴏᴛɪᴠᴀᴛᴏʀs",
             url="https://www.telegram.dog/gtnero",
             thumb=photo,
             content=photo,
