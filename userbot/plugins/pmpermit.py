@@ -475,10 +475,11 @@ async def on_plug_in_callback_query_handler(event):
     if event.query.user_id == event.client.uid:
         text = "Idoit these options are for users who messages you, not for you"
         return await event.answer(text, cache_time=0, alert=True)
-    text = f"""Ok, Now you are accessing the availabe menu of my master, {mention}.
-__Let's make this smooth and let me know why you are here.__
+    text = f"""__{mention} Oᴋ, Nᴏᴡ ʏᴏᴜ ᴀʀᴇ ᴀᴄᴄᴇssɪɴɢ ᴛʜᴇ ᴀᴠᴀɪʟᴀʙᴇ ᴍᴇɴᴜ ᴏғ ᴍʏ ʙᴏss,__
 
-**Choose one of the following reasons why you are here:**"""
+__Lᴇᴛ's ᴍᴀᴋᴇ ᴛʜɪs sᴍᴏᴏᴛʜ ᴀɴᴅ ʟᴇᴛ ᴍᴇ ᴋɴᴏᴡ ᴡʜʏ ʏᴏᴜ ᴀʀᴇ ʜᴇʀᴇ.__
+
+**Cʜᴏᴏsᴇ ᴏɴᴇ ᴏғ ᴛʜᴇ ғᴏʟʟᴏᴡɪɴɢ ʀᴇᴀsᴏɴs ᴡʜʏ ʏᴏᴜ ᴀʀᴇ ʜᴇʀᴇ:**"""
     buttons = [
         (Button.inline(text="🤝 ᴛᴏ ʀᴇǫᴜᴇsᴛ sᴏᴍᴇᴛʜɪɴɢ 🤝", data="to_request_something"),),
         (Button.inline(text="💭 ᴛᴏ ᴄʜᴀᴛ ғᴏʀ ᴀ ᴡʜɪʟᴇ 💭", data="go_to_bot"),),
@@ -506,9 +507,11 @@ async def on_plug_in_callback_query_handler(event):
     if event.query.user_id == event.client.uid:
         text = "Idoit this options for user who messages you. not for you"
         return await event.answer(text, cache_time=0, alert=True)
-    text = """__Okay. Your request has been registered. Do not spam my master's inbox now. \
-My master is busy right now, When My master comes online he/she will check your message and ping you. \
-Then we can extend this conversation more but not right now.__"""
+    text = """Oᴋᴀʏ. Yᴏᴜʀ ʀᴇǫᴜᴇsᴛ ʜᴀs ʙᴇᴇɴ ʀᴇɢɪsᴛᴇʀᴇᴅ. Dᴏ ɴᴏᴛ sᴘᴀᴍ ᴍʏ ʙᴏss ɪɴʙᴏx ɴᴏᴡ. 
+
+Mʏ ʙᴏss ɪs ʙᴜsʏ ʀɪɢʜᴛ ɴᴏᴡ, Wʜᴇɴ Mʏ ᴍᴀsᴛᴇʀ ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ ʜᴇ/sʜᴇ ᴡɪʟʟ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ᴀɴᴅ ᴘɪɴɢ ʏᴏᴜ. 
+
+**Tʜᴇɴ ᴡᴇ ᴄᴀɴ ᴇxᴛᴇɴᴅ ᴛʜɪs ᴄᴏɴᴠᴇʀsᴀᴛɪᴏɴ ᴍᴏʀᴇ ʙᴜᴛ ɴᴏᴛ ʀɪɢʜᴛ ɴᴏᴡ**"""
     sqllist.add_to_list("pmenquire", event.query.user_id)
     try:
         PM_WARNS = sql.get_collection("pmwarns").json
@@ -527,10 +530,11 @@ async def on_plug_in_callback_query_handler(event):
     if event.query.user_id == event.client.uid:
         text = "Idoit this options for user who messages you. not for you"
         return await event.answer(text, cache_time=0, alert=True)
-    text = """__Oᴋᴀʏ. I ʜᴀᴠᴇ ɴᴏᴛɪғɪᴇᴅ ᴍʏ ᴏᴡɴᴇʀ ᴀʙᴏᴜᴛ ᴛʜɪs. Wʜᴇɴ ʜᴇ/sʜᴇ ᴄᴏᴍᴇs ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ\
-  ᴏʀ ᴡʜᴇɴ ᴍʏ ᴏᴡɴᴇʀ ɪs ғʀᴇᴇ ʜᴇ/sʜᴇ ᴡɪʟʟ ʟᴏᴏᴋ ɪɴᴛᴏ ᴛʜɪs ᴄʜᴀᴛ ᴀɴᴅ ᴡɪʟʟ ᴘɪɴɢ ʏᴏᴜ sᴏ ᴡᴇ ᴄᴀɴ ʜᴀᴠᴇ ᴀ ғʀɪᴇɴᴅʟʏ ᴄʜᴀᴛ.__\
+    text = """__Oᴋᴀʏ. I ʜᴀᴠᴇ ɴᴏᴛɪғɪᴇᴅ ᴍʏ ʙᴏss ᴀʙᴏᴜᴛ ᴛʜɪs. Wʜᴇɴ ʜᴇ/sʜᴇ ᴄᴏᴍᴇs ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ
 
-\n\n**Bᴜᴛ ʀɪɢʜᴛ ɴᴏᴡ ᴘʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ sᴘᴀᴍ ᴜɴʟᴇss ʏᴏᴜ ᴡɪsʜ ᴛᴏ ɢᴇᴛ ʙʟᴏᴄᴋᴇᴅ.**"""
+__ᴏʀ ᴡʜᴇɴ ᴍʏ ʙᴏss ɪs ғʀᴇᴇ ʜᴇ/sʜᴇ ᴡɪʟʟ ʟᴏᴏᴋ ɪɴᴛᴏ ᴛʜɪs ᴄʜᴀᴛ ᴀɴᴅ ᴡɪʟʟ ᴘɪɴɢ ʏᴏᴜ sᴏ ᴡᴇ ᴄᴀɴ ʜᴀᴠᴇ ᴀ ғʀɪᴇɴᴅʟʏ ᴄʜᴀᴛ.__\
+
+\n\n**⛔ Bᴜᴛ ʀɪɢʜᴛ ɴᴏᴡ ᴘʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ sᴘᴀᴍ ᴜɴʟᴇss ʏᴏᴜ ᴡɪsʜ ᴛᴏ ɢᴇᴛ ʙʟᴏᴄᴋᴇᴅ. ⛔**"""
     sqllist.add_to_list("pmrequest", event.query.user_id)
     try:
         PM_WARNS = sql.get_collection("pmwarns").json
