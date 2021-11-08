@@ -598,8 +598,7 @@ async def on_plug_in_callback_query_handler(event):
 
 @catub.tgbot.on(CallbackQuery(data=re.compile(rb"go_to_bot")))
 async def on_plug_in_callback_query_handler(event):
-    if event.query.user_id == event.client.uid:
-        await query.answer(url="https://t.me/GTRexabot?start=true")
+    await event.answer(url="https://t.me/GTRexabot?start=xyz")
 
 @catub.cat_cmd(
     pattern="pmguard (on|off)$",
