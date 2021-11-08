@@ -119,11 +119,10 @@ async def do_pm_permit_action(event, chat):  # sourcery no-metrics
             remwarns=remwarns,
         )
     elif gvarstatus("pmmenu") is None:
-        USER_BOT_NO_WARN = f"""__Hi__ {mention}__, I haven't approved you yet to personal message me. 
+        USER_BOT_NO_WARN = f""" Hɪ {mention} , I ʜᴀᴠᴇɴ'ᴛ ᴀᴘᴘʀᴏᴠᴇᴅ ʏᴏᴜ ʏᴇᴛ ᴛᴏ ᴘᴇʀsᴏɴᴀʟ ᴍᴇssᴀɢᴇ ᴍᴇ. 
+Yᴏᴜ ʜᴀᴠᴇ【 {warns} - {totalwarns} 】ᴡᴀʀɴs ᴜɴᴛɪʟ ʏᴏᴜ ɢᴇᴛ ʙʟᴏᴄᴋᴇᴅ ʙʏ ᴛʜᴇ Usᴇʀʙᴏᴛ.
 
-You have {warns}/{totalwarns} warns until you get blocked by the CatUserbot.
-
-Choose an option from below to specify the reason of your message and wait for me to check it. __⬇️"""
+Cʜᴏᴏsᴇ ᴀɴ ᴏᴘᴛɪᴏɴ ғʀᴏᴍ ʙᴇʟᴏᴡ ᴛᴏ sᴘᴇᴄɪғʏ ᴛʜᴇ ʀᴇᴀsᴏɴ ᴏғ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ᴀɴᴅ ᴡᴀɪᴛ ғᴏʀ ᴍᴇ ᴛᴏ ᴄʜᴇᴄᴋ ɪᴛ."""
     else:
         USER_BOT_NO_WARN = f"""__Hi__ {mention}__, I haven't approved you yet to personal message me.
 
