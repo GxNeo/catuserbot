@@ -527,8 +527,8 @@ async def on_plug_in_callback_query_handler(event):
     if event.query.user_id == event.client.uid:
         text = "Idoit this options for user who messages you. not for you"
         return await event.answer(text, cache_time=0, alert=True)
-    text = """__Okay. I have notified my master about this. When he/she comes comes online\
- or when my master is free he/she will look into this chat and will ping you so we can have a friendly chat.__\
+    text = """__Oᴋᴀʏ. I ʜᴀᴠᴇ ɴᴏᴛɪғɪᴇᴅ ᴍʏ ᴏᴡɴᴇʀ ᴀʙᴏᴜᴛ ᴛʜɪs. Wʜᴇɴ ʜᴇ/sʜᴇ ᴄᴏᴍᴇs ᴄᴏᴍᴇs ᴏɴʟɪɴᴇ\
+  ᴏʀ ᴡʜᴇɴ ᴍʏ ᴏᴡɴᴇʀ ɪs ғʀᴇᴇ ʜᴇ/sʜᴇ ᴡɪʟʟ ʟᴏᴏᴋ ɪɴᴛᴏ ᴛʜɪs ᴄʜᴀᴛ ᴀɴᴅ ᴡɪʟʟ ᴘɪɴɢ ʏᴏᴜ sᴏ ᴡᴇ ᴄᴀɴ ʜᴀᴠᴇ ᴀ ғʀɪᴇɴᴅʟʏ ᴄʜᴀᴛ.__\
 
 **But right now please do not spam unless you wish to get blocked.**"""
     sqllist.add_to_list("pmrequest", event.query.user_id)
@@ -598,7 +598,7 @@ async def on_plug_in_callback_query_handler(event):
 
 @catub.tgbot.on(CallbackQuery(data=re.compile(rb"go_to_bot")))
 async def on_plug_in_callback_query_handler(event):
-    await event.answer(url="https://t.me/GTRexabot?start=xyz")
+    await event.answer(url="https://t.me/GTRexabot?start=/start")
 
 @catub.cat_cmd(
     pattern="pmguard (on|off)$",
