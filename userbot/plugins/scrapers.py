@@ -119,19 +119,23 @@ async def imdb_query(event):  # sourcery no-metrics
         mov_cast = await get_cast("cast", movie)
         mov_box = await get_moviecollections(movie)
         resulttext = f"""
-<b>Title : </b><code>{mov_title}</code>
-<b>Imdb Url : </b><a href='https://www.imdb.com/title/tt{movieid}'>{mov_ltitle}</a>
-<b>Info : </b><code>{mov_runtime} | {mov_airdate}</code>
-<b>Genres : </b><code>{mov_genres}</code>
-<b>Rating : </b><code>{mov_rating}</code>
-<b>Country : </b><code>{mov_countries}</code>
-<b>Language : </b><code>{mov_languages}</code>
-<b>Director : </b><code>{mov_director}</code>
-<b>Music Director : </b><code>{mov_composers}</code>
-<b>Writer : </b><code>{mov_writer}</code>
-<b>Stars : </b><code>{mov_cast}</code>
-<b>Box Office : </b>{mov_box}
-<b>Story Outline : </b><i>{mov_plot}</i>"""
+<b>🔖 Tɪᴛʟᴇ : <a href='https://www.imdb.com/title/tt{movieid}'>{mov_ltitle}</a></b>
+<b>🛸  Iɴғᴏ : </b><code>{mov_runtime} | {mov_airdate}</code>
+
+<b>🎭 𝙶ᴇɴʀᴇ : </b><code>{mov_genres}</code>
+<b>🌟 Rᴀᴛɪɴɢ : </b><code>{mov_rating}</code>
+<b>🌍 Cᴏᴜɴᴛʀʏ : </b><code>{mov_countries}</code>
+<b>🎙 Lᴀɴɢᴜᴀɢᴇ : </b><code>{mov_languages}</code>
+
+<b>🕵  Dɪʀᴇᴄᴛᴏʀ : </b><code>{mov_director}</code>
+<b>🎹 Mᴜsɪᴄ Dɪʀᴇᴄᴛᴏʀ : </b><code>{mov_composers}</code>
+<b>✍ Wʀɪᴛᴇʀ : </b><code>{mov_writer}</code>
+
+<b>💎 Sᴛᴀʀs : </b><code>{mov_cast}</code>
+
+<b>🏢 Bᴏx Oғғɪᴄᴇ : </b><code>{mov_box}</code>
+
+<b>📖 Sᴛᴏʀʏ Oᴜᴛʟɪɴᴇ : </b><i>{mov_plot}</i>"""
         if "full-size cover url" in moviekeys:
             imageurl = movie["full-size cover url"]
         else:
