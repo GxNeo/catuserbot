@@ -147,8 +147,8 @@ async def _(event):
 
 
 @catub.cat_cmd(
-    pattern="info(?:\s|$)([\s\S]*)",
-    command=("info", plugin_category),
+    pattern="ara(?:\s|$)([\s\S]*)",
+    command=("ara", plugin_category),
     info={
         "header": "Gets info of an user.",
         "description": "User compelete details.",
