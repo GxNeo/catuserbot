@@ -115,7 +115,7 @@ async def on_afk(event):  # sourcery no-metrics
         if AFK_.afk_type == "media":
             if AFK_.reason:
                 message_to_reply = (
-                    f"**........ ɪ ᴀᴍ ᴀғᴋ ʀɪɢʜᴛ ɴᴏᴡ........ \n\n🎪 ʀᴇᴀsᴏɴ :** `{AFK_.reason}`\n\n**👁 ʟᴀsᴛ sᴇᴇɴ :  {endtime}\n\n⚡️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ :** __[ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ](tg://user?id=1291364201)__\n\n__•────•──────────•────•\n❛ Don't wait the perfect moment, \nTake a moment and make it perfect ❜__"
+                    f"**........ ɪ ᴀᴍ ᴀғᴋ ʀɪɢʜᴛ ɴᴏᴡ........ \n\n🎪 ʀᴇᴀsᴏɴ :** `{AFK_.reason}`\n\n**👁 ʟᴀsᴛ sᴇᴇɴ :  {endtime}\n\n⚡️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ :** __[ɢx ᡧ ɴᴇᴏ](tg://user?id=1908563535)__\n\n__•────•──────────•────•\n❛ Don't wait the perfect moment, \nTake a moment and make it perfect ❜__"
                 )
             else:
                 message_to_reply = f"`I am AFK .\n\nAFK Since {endtime}\nReason : Not Mentioned ( ಠ ʖ̯ ಠ)`"
@@ -128,7 +128,7 @@ async def on_afk(event):  # sourcery no-metrics
                 )
             elif AFK_.reason:
                 message_to_reply = (
-                    f"**........ ɪ ᴀᴍ ᴀғᴋ ʀɪɢʜᴛ ɴᴏᴡ........ \n\n🎪 ʀᴇᴀsᴏɴ :** `{AFK_.reason}`\n\n**👁 ʟᴀsᴛ sᴇᴇɴ :  {endtime}\n\n⚡️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ :** __[ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ](tg://user?id=1291364201)__\n\n__•────•──────────•────•\n❛ Don't wait the perfect moment, \nTake a moment and make it perfect ❜__"
+                    f"**........ ɪ ᴀᴍ ᴀғᴋ ʀɪɢʜᴛ ɴᴏᴡ........ \n\n🎪 ʀᴇᴀsᴏɴ :** `{AFK_.reason}`\n\n**👁 ʟᴀsᴛ sᴇᴇɴ :  {endtime}\n\n⚡️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ :** __[ɢx ᡧ ɴᴇᴏ](tg://user?id=1908563535)__\n\n__•────•──────────•────•\n❛ Don't wait the perfect moment, \nTake a moment and make it perfect ❜__"
                 )
             else:
                 message_to_reply = f"`I am AFK .\n\nAFK Since {endtime}\nReason : Not Mentioned ( ಠ ʖ̯ ಠ)`"
