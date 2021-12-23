@@ -30,7 +30,7 @@ from .logger import logging
 LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
-CATLOGO = "https://telegra.ph/file/e2373dae0df4ea3e66bff.jpg"
+CATLOGO = "https://telegra.ph/file/a3beeb61ced5563655832.jpg"
 tr = Config.COMMAND_HAND_LER
 
 
@@ -56,22 +56,22 @@ def main_menu():
     text = f"𝗖𝗮𝘁𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗛𝗲𝗹𝗽𝗲𝗿\
         \n𝗣𝗿𝗼𝘃𝗶𝗱𝗲𝗱 𝗯𝘆 {mention}"
     buttons = [
-        (Button.inline("ℹ️ Info", data="check"),),
+        (Button.inline("🔋 ɪɴꜰᴏ", data="check"),),
         (
-            Button.inline(f"👮‍♂️ Admin ({len(GRP_INFO['admin'])})", data="admin_menu"),
-            Button.inline(f"🤖 Bot ({len(GRP_INFO['bot'])})", data="bot_menu"),
+            Button.inline(f"👮‍♂️ ᴀᴅᴍɪɴ ({len(GRP_INFO['admin'])})", data="admin_menu"),
+            Button.inline(f"🛢️ ʙᴏᴛ ({len(GRP_INFO['bot'])})", data="bot_menu"),
         ),
         (
-            Button.inline(f"🎨 Fun ({len(GRP_INFO['fun'])})", data="fun_menu"),
-            Button.inline(f"🧩 Misc ({len(GRP_INFO['misc'])})", data="misc_menu"),
+            Button.inline(f"☃️ ꜰᴜɴ ({len(GRP_INFO['fun'])})", data="fun_menu"),
+            Button.inline(f"🧩 ᴍɪᴄs ({len(GRP_INFO['misc'])})", data="misc_menu"),
         ),
         (
-            Button.inline(f"🧰 Tools ({len(GRP_INFO['tools'])})", data="tools_menu"),
-            Button.inline(f"🗂 Utils ({len(GRP_INFO['utils'])})", data="utils_menu"),
+            Button.inline(f"🧰 ᴛᴏᴏʟs ({len(GRP_INFO['tools'])})", data="tools_menu"),
+            Button.inline(f"🗃️ ᴜɴɪᴛs ({len(GRP_INFO['utils'])})", data="utils_menu"),
         ),
         (
-            Button.inline(f"➕ Extra ({len(GRP_INFO['extra'])})", data="extra_menu"),
-            Button.inline("🔒 Close Menu", data="close"),
+            Button.inline(f"✚ ᴇxᴛʀᴀ ({len(GRP_INFO['extra'])})", data="extra_menu"),
+            Button.inline("🔒 ᴄʟᴏsᴇ ᴍᴇɴᴜ", data="close"),
         ),
     ]
 
@@ -164,12 +164,12 @@ def paginate_help(
             ] + [
                 (
                     Button.inline("⌫", data=f"{prefix}_prev({modulo_page})_plugin"),
-                    Button.inline("⚙️ Main Menu", data="mainmenu"),
+                    Button.inline("🌀 ᴍᴀɪɴ ᴍᴇɴᴜ", data="mainmenu"),
                     Button.inline("⌦", data=f"{prefix}_next({modulo_page})_plugin"),
                 )
             ]
         else:
-            pairs = pairs + [(Button.inline("⚙️ Main Menu", data="mainmenu"),)]
+            pairs = pairs + [(Button.inline("🌀 ᴍᴀɪɴ ᴍᴇɴᴜ", data="mainmenu"),)]
     elif len(pairs) > number_of_rows:
         if category_pgno < 0:
             category_pgno = len(pairs) + category_pgno
@@ -182,7 +182,7 @@ def paginate_help(
                     data=f"{prefix}_prev({modulo_page})_command_{category_plugins}_{category_pgno}",
                 ),
                 Button.inline(
-                    "⬅️ Back ",
+                    "⬅️ ʙᴀᴄᴋ ",
                     data=f"back_plugin_{category_plugins}_{category_pgno}",
                 ),
                 Button.inline(
@@ -197,7 +197,7 @@ def paginate_help(
         pairs = pairs + [
             (
                 Button.inline(
-                    "⬅️ Back ",
+                    "⬅️ ʙᴀᴄᴋ ",
                     data=f"back_plugin_{category_plugins}_{category_pgno}",
                 ),
             )
@@ -332,7 +332,7 @@ async def inline_handler(event):  # sourcery no-metrics
             timestamp = int(time.time() * 2)
             newtroll = {str(timestamp): {"userid": u, "text": txct}}
 
-            buttons = [Button.inline("show message 🔐", data=f"troll_{timestamp}")]
+            buttons = [Button.inline("sʜᴏᴡ ᴍᴇssᴀɢᴇ🔐", data=f"troll_{timestamp}")]
             result = builder.article(
                 title="Troll Message",
                 text=f"Only {sandy} cannot access this message!",
@@ -382,7 +382,7 @@ async def inline_handler(event):  # sourcery no-metrics
             timestamp = int(time.time() * 2)
             newsecret = {str(timestamp): {"userid": u, "text": txct}}
 
-            buttons = [Button.inline("show message 🔐", data=f"secret_{timestamp}")]
+            buttons = [Button.inline("sʜᴏᴡ ᴍᴇssᴀɢᴇ 🔐", data=f"secret_{timestamp}")]
             result = builder.article(
                 title="secret message",
                 text=f"🔒 A whisper message to {sandy}, Only he/she can open it.",
@@ -445,11 +445,11 @@ async def inline_handler(event):  # sourcery no-metrics
                             data=f"ytdl_next_{key_}_1",
                         ),
                         Button.inline(
-                            "📜  List all",
+                            "ʟɪsᴛ ᴀʟʟ",
                             data=f"ytdl_listall_{key_}_1",
                         ),
                         Button.inline(
-                            "⬇️  Download",
+                            "ᴅᴏᴡɴʟᴏᴀᴅ",
                             data=f'ytdl_download_{outdata[1]["video_id"]}_0',
                         ),
                     ]
@@ -470,7 +470,7 @@ async def inline_handler(event):  # sourcery no-metrics
                     id=str(uuid4()),
                     type="photo",
                     title=link,
-                    description="⬇️ Click to Download",
+                    description="⇩ ᴄʟɪᴄᴋ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⇩",
                     thumb=photo,
                     content=photo,
                     send_message=types.InputBotInlineMessageMediaAuto(
@@ -523,7 +523,7 @@ async def inline_handler(event):  # sourcery no-metrics
             await event.answer([result] if result else None)
         elif string == "pmpermit":
             buttons = [
-                Button.inline(text="⬇️ ᴘʟᴇᴀsᴇ ᴄʜᴏɪᴄᴇ ᴀɴʏ ᴏᴘᴛɪᴏɴs ⬇️", data="show_pmpermit_options"),
+                Button.inline(text="⇩ ᴘʟᴇᴀsᴇ ᴄʜᴏɪᴄᴇ ᴀɴʏ ᴏᴘᴛɪᴏɴs ⇩", data="show_pmpermit_options"),
             ]
             PM_PIC = gvarstatus("pmpermit_pic")
             if PM_PIC:
@@ -557,7 +557,7 @@ async def inline_handler(event):  # sourcery no-metrics
     else:
         buttons = [
             (
-                Button.url("❤️ ᴄᴏɴᴛᴀᴄᴛ  ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ ❤️", "https://t.me/GTNero",
+                Button.url("👑 ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ʙᴏss 👑", "https://t.me/Gxneo",
                 ),
             )
         ]
@@ -568,14 +568,14 @@ async def inline_handler(event):  # sourcery no-metrics
         text, msg_entities = await event.client._parse_message_text(
             "**Iғ ʏᴏᴜʀ ɪɴᴛᴇɴᴛɪᴏɴ ɪs ᴘᴏᴡᴇʀғᴜʟ, ʏᴏᴜʀ ᴀᴄᴛɪᴏɴ ᴡɪʟʟ ʙᴇ ᴘᴏᴡᴇʀғᴜʟ.**\
              \n**Iғ ʏᴏᴜʀ ᴀᴄᴛɪᴏɴ ɪs ᴘᴏᴡᴇʀғᴜʟ, ʏᴏᴜʀ ʀᴇsᴜʟᴛs ᴡɪʟʟ ʙᴇ ᴘᴏᴡᴇʀғᴜʟ.**\
-             \n\n**• • •「 [ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ](https://t.me/GTNero) 」• • •**", "md"
+             \n\n**• • •「 [ɢx ᡧ ɴᴇᴏ](https://t.me/Gxneo) 」• • •**", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="🌟 ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ 🌟",
+            title="🌟 ɢx ᡧ ɴᴇᴏ ˙ ᵋᶻᶟ 🌟",
             description="Mʏ ʜᴀᴛᴇʀs ᴀʀᴇ ᴍʏ ᴍᴏᴛɪᴠᴀᴛᴏʀs",
-            url="https://www.telegram.dog/gtnero",
+            url="https://www.telegram.dog/gxneo",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
@@ -589,9 +589,9 @@ async def inline_handler(event):  # sourcery no-metrics
 @check_owner
 async def on_plug_in_callback_query_handler(event):
     buttons = [
-        (Button.inline("Open Menu", data="mainmenu"),),
+        (Button.inline("ᴏᴘᴇɴ ᴍᴇɴᴜ", data="mainmenu"),),
     ]
-    await event.edit("Menu Closed", buttons=buttons)
+    await event.edit("ᴍᴇɴᴜ ᴄʟᴏsᴇᴅ", buttons=buttons)
 
 
 @catub.tgbot.on(CallbackQuery(data=re.compile(b"check")))
