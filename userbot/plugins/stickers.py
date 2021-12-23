@@ -68,8 +68,8 @@ def verify_cond(catarray, text):
 
 def pack_name(userid, pack, is_anim):
     if is_anim:
-        return f"GTNero_an_{pack}"
-    return f"GTNero_0{pack}"
+        return f"Gxneo_an_{pack}"
+    return f"Gxneoo_0{pack}"
 
 
 def char_is_emoji(character):
@@ -85,9 +85,9 @@ def pack_nick(username, pack, is_anim):
         )
 
     elif is_anim:
-        return f"ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ | @GTNero《{pack}》"
+        return f"ɢx ₪ᴇᴏ | @Gxneo《{pack}》"
     else:
-        return f"ɢᴛ ᠰ ɴᴇʀᴏ ˙ ᵋᶻᶟ | @GTNero《{pack}》"
+        return f"ɢx ₪ᴇᴏ | @Gxneo《{pack}》"
 
 
 async def resize_photo(photo):
