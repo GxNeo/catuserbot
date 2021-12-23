@@ -85,9 +85,9 @@ def pack_nick(username, pack, is_anim):
         )
 
     elif is_anim:
-        return f"ɢx ₪ᴇᴏ | @Gxneo《{pack}》"
+        return f"ɢx ᡧ ɴᴇᴏ | @Gxneo《{pack}》"
     else:
-        return f"ɢx ₪ᴇᴏ | @Gxneo《{pack}》"
+        return f"ɢx ᡧ ɴᴇᴏ | @Gxneo《{pack}》"
 
 
 async def resize_photo(photo):
